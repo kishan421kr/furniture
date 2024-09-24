@@ -43,7 +43,7 @@
 }
 @media (max-width:769px){
     .topnav{
-        padding: 5px 20px 5px 20px ;
+        padding: 10px 20px 10px 20px ;
     }
 
 }
@@ -188,6 +188,7 @@
 @media (max-width:1025px){
     .mainnav{
         padding: 20px 50px 20px 50px;
+        top: 35.6px;
     }
     .main3 a{
         padding: 9px;
