@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(250, 250, 250);
+    background-color: rgb(9, 4, 66);
+    padding: 10px 100px 10px 100px;
+    font-family: "Bai Jamjuree", sans-serif;
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+}
+
+.topnav div{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.topnav div i{
+    margin-right: 5px;
+}
+/* =====================top navbar media query start=============================== */
+
+@media (max-width:1025px){
+    .topnav{
+        padding: 10px 50px 10px 50px;
+    }
+    .topnav div{
+        font-size: 12px;
+    }
+}
+@media (max-width:769px){
+    .topnav{
+        padding: 5px 20px 5px 20px ;
+    }
+
+}
+@media (max-width:660px){
+    .topnav{
+        padding: 5px 20px 5px 20px;
+    }
+    .topnav div{
+        font-size: 10px;
+    }
+}
+@media (max-width:431px){
+    .topnav{
+        display: none;
+    }
+}
+
+/* =====================top nav bar media query ends=============================== */
+
+/* ===============main nav bar================ */
+
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    font-family: "Bai Jamjuree", sans-serif;
+    position: sticky;
+    z-index: 5;
+    background-color: white;
+    top: 37.6px;
+}
+.main1{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.main2{
+    display: flex;
+}
+.main2 div {
+    margin-left: 20px;
+}
+.main2 a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main2 a:hover{
+    color: #090442;
+    text-decoration: underline 1px;
+    transition: 0.5s;
+}
+
+.main2 a:active{
+    color: #090442;
+    text-decoration: underline 1px;
+    transition: 0.5s;
+}
+
+.main3{
+    display: flex;
+}
+.main3 div{
+    margin-left: 25px;
+}
+.main3 a{
+    color: rgb(250, 250, 250);
+    background-color: #090442;
+    border-radius: 50%;
+    padding: 10px;
+    height: 10px;
+    width: 10px;
+    font-size: 16px;
+}
+.main3 a:hover{
+    color: #090442;
+    background-color: rgb(250, 250, 250);
+    transition: 0.5s;
+}
+
+/* ========================moble view and slide navbar css start====================*/
+
+.mobileviewnav{
+    display: none;
+}
+#sidebar{
+    width: 250px;
+    height: 50vh;
+    background-color: rgb(250, 250, 250);
+    /* color: rgb(10, 10, 10); */
+    position: absolute;
+    top: 0px;
+    left: -400px;
+    z-index: 6;
+    padding: 20px;
+}
+
+.sidebar1{
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 20px 0px;
+    border-bottom:0.5px solid rgb(9, 4, 66) ;
+}
+.sidebar1 div{
+    margin-left: 20px ;
+
+}
+.sidebar1 div a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    background-color: #090442;
+    border-radius: 50%;
+    padding: 7px;
+    height: 10px;
+    width: 10px;
+    font-size: 16px;
+}
+.sidebar2{
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+}
+.sidebar2 div{
+    margin: 20px 0px 0px 0px;
+
+}
+.sidebar2 div a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ========================moble view and slide navbar css ends====================*/
+
+/* =====================media query start=============================== */
+
+@media (max-width:1025px){
+    .mainnav{
+        padding: 20px 50px 20px 50px;
+    }
+    .main3 a{
+        padding: 9px;
+    }
+    .main3 div{
+        margin-left: 20px;
+    }
+}
+@media (max-width:925px){
+    .mainnav{
+        padding: 18px 30px 18px 30px;
+    }
+    .main2 a{
+        font-size: 13px;
+    }
+    .main3 a{
+        padding: 8px;
+        font-size: 14px;
+    }
+    .main3 div{
+        margin-left: 15px;
+    }
+
+}
+
+@media (max-width:831px){
+    
+    .main2 a{
+        font-size: 12px;
+    }
+    .main3 div{
+        margin-left: 10px;
+    }
+    .main3 a{
+        padding: 7px;
+    }
+}
+
+@media (max-width:769px){
+    .mainnav{
+        padding: 10px 20px 10px 20px ;
+    }
+    .main2 a{
+        font-size: 12px;
+    }
+    .main3 a{
+        padding: 5px;
+    }
+    .main3 div{
+        margin-left: 5px;
+    }
+}
+@media (max-width:750px){
+    .mainnav{
+        display: none;
+    }
+    .mobileviewnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px 30px;
+        font-size: 16px;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-family: "Bai Jamjuree", sans-serif;
+    }
+    
+    .mobnav2 a{
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        background-color: #090442;
+        border-radius: 50%;
+        padding: 7px;
+        height: 10px;
+        width: 10px;
+        font-size: 16px;
+    }
+    .mobnav2 a:hover{
+        color: #090442;
+        background-color: rgb(250, 250, 250);
+        transition: 0.5s;
+    }
+    #inputmainnav:checked ~ #sidebar{
+        left: 0px;
+        transition: left 1s;
+    }
+    #inputmainnavout:checked ~ #sidebar{
+        left: -400px;
+        transition: 1s;
+    }
+}
+
+@media (max-width:431px){
+    .mainnav{
+        display: none;
+    }
+    .mobileviewnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px 30px;
+    }
+    .logo{
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: "Bai Jamjuree", sans-serif;
+    }
+    
+    .mobnav2 a{
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        background-color: #090442;
+        border-radius: 50%;
+        padding: 5px;
+        height: 10px;
+        width: 10px;
+        font-size: 12px;
+    }
+    .mobnav2 a:hover{
+        color: #090442;
+        background-color: rgb(250, 250, 250);
+        transition: 0.5s;
+    }
+    #inputmainnav:checked ~ #sidebar{
+        left: 0px;
+        transition: left 1s;
+    }
+    #inputmainnavout:checked ~ #sidebar{
+        left: -400px;
+        transition: 1s;
+    }
+}
+
+/* =====================media query ends=============================== */
+
+/* ==============hero========================== */
+
+.hero{
+    background-image: url('./images/pexels-vika-glitter-392079-1648771.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
+    font-family: "Jost", sans-serif;
+    align-items: center;
+    color: rgb(250, 250, 250);
+    position: static;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.hero div span{
+    font-size: 30px;
+}
+.hero div u{
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.573);
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.312);
+}
+/* =====================media query start=============================== */
+
+@media (max-width:1025px){
+    .hero{
+        background-position: 0px -150px;
+        
+    }
+    .hero div{
+        font-size: 14px;
+    }
+    .hero div span{
+        font-size: 25px;
+    }
+    .hero div u{
+        font-size: 14px;
+    }
+}
+@media (max-width:880px){
+    .hero{
+        background-position: 0px -50px;
+    }
+    .hero div{
+        font-size: 13px;
+    }
+    .hero div span{
+        font-size: 22px;
+    }
+    .hero div u{
+        font-size: 13px;
+    }
+}
+@media (max-width:769px){
+    .hero{
+        background-position: -50px -20px;
+    }
+    .hero div{
+        font-size: 13px;
+    }
+    .hero div span{
+        font-size: 22px;
+    }
+    .hero div u{
+        font-size: 13px;
+    }
+}
+@media (max-width:431px){
+    .hero{
+        background-position: -187px 0px;
+    }
+    .hero div{
+        font-size: 10px;
+    }
+    .hero div span{
+        font-size: 16px;
+    }
+    .hero div u{
+        font-size: 10px;
+    }
+}
+
+/* =====================media query ends=============================== */
+
+/* =====================next to the hero ================ */
+
+/* .threecard{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.threecard div{
+    margin: 20px;
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+
+} */
+
+.herotext{
+    height: 40vh;
+    margin: 60px 130px 60px 130px;
+    /* border-bottom: 0.5px solid rgb(10, 10, 10); */
+    font-family: "Bai Jamjuree", sans-serif;
+    
+}
+.herotext h4{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+/* =====================media query start=============================== */
+
+@media (max-width:1025px){
+    .herotext{
+        height: 45vh;
+        margin: 50px 100px 50px 100px; 
+        font-size: 14px;  
+    }
+    .herotext h4{
+        font-size: 18px;
+    }
+}
+@media (max-width:769px) {
+    .herotext{
+        height: 42vh;
+        margin: 30px 50px 30px 50px;
+        font-size: 13px;
+    }
+    .herotext h4{
+        font-size: 17px;
+    }
+}
+@media (max-width:431px){
+    .herotext{
+        height: 50vh;
+        margin: 10px 30px 10px 30p;
+        font-size: 11px;
+    }
+    .herotext h4{
+        font-size: 15px;
+    }
+}
+
+/* =====================media query start=============================== */
+
+/* =====================new arrival========================= */
+
+#newarrival{
+    font-family: "Bai Jamjuree", sans-serif;
+    /* border-bottom: 0.5px solid rgb(10, 10, 10); */
+    background-color: rgb(245, 245, 241);
+    padding: 40px 0px 40px 0px;
+}
+#newarrival h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+#newarrival article{
+    display: flex;
+    overflow-x: scroll;
+    margin: 40px 100px 40px 100px;
+
+}
+#newarrival article div{
+    margin: 20px;
+}
+#newarrival article div img{
+    height: 500px;
+    width: 550px;
+} 
+#newarrival article div h3{
+    font-size: 16px ;
+    font-weight: 400;
+}
+#newarrival article::-webkit-scrollbar{
+    display: none;
+}
+
+/* =====================media query start=============================== */
+@media (max-width:1025px){
+    #newarrival h2{
+        font-size: 25px;   
+    }
+    #newarrival article div img{
+        height: 400px;
+        width: 450px;
+    } 
+    #newarrival article div h3{
+        font-size: 14px ;
+    }
+    #newarrival article{
+        margin: 30px 50px 30px 50px;
+    
+    }
+}
+@media (max-width:769px){
+    #newarrival h2{
+        font-size: 20px;   
+    }
+    #newarrival article div img{
+        height: 300px;
+        width: 350px;
+    } 
+    #newarrival article div h3{
+        font-size: 12px ;
+    }
+    #newarrival article{
+        margin: 20px 30px 20px 30px;
+    
+    }
+}
+@media (max-width:431px){
+    #newarrival h2{
+        font-size: 15px;   
+    }
+    #newarrival article div img{
+        height: 280px;
+        width: 320px;
+    } 
+    #newarrival article div h3{
+        font-size: 11px ;
+    }
+    #newarrival article{
+        margin: 20px 30px 20px 30px;
+    
+    }
+}
+/* =====================media query ends=============================== */
+
+/* ============================= best seller====================================== */
+
+#BestSellers{
+    font-family: "Bai Jamjuree", sans-serif;
+    margin: 40px 0px 40px 0px;
+}
+#BestSellers h2{
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+    font-size: 30px;
+    font-weight: 600;
+}
+#BestSellers article{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#BestSellers article div img{
+    height: 600px;
+    width: 440px;
+}
+/* =====================media query start=============================== */
+
+@media (max-width:1341px){
+    #BestSellers article div img{
+        height: 400px;
+        width: 280px;
+    }
+}
+@media (max-width:1025px){
+    #BestSellers article{
+        font-size: 14px;
+    }
+    
+    #BestSellers h2{
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        font-size: 25px;
+        font-weight: 600;
+    }  
+}
+@media (max-width:880px){
+    #BestSellers article{
+        font-size: 13px;
+    }
+    #BestSellers article div img{
+        height: 300px;
+        width: 220px;
+    }
+    #BestSellers h2{
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+@media (max-width:769px){
+    #BestSellers article{
+        font-size: 12px;
+    }
+    #BestSellers article div img{
+        height: 280px;
+        width: 190px;
+    }
+    #BestSellers h2{
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+@media (max-width:600px){
+    #BestSellers article{
+        font-size: 11px;
+        display: grid;
+    }
+    #BestSellers article div img{
+        height: 280px;
+        width: 190px;
+    }
+    #BestSellers h2{
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media (max-width:431px){
+    #BestSellers article{
+        font-size: 11px;
+        display: grid;
+    }
+    #BestSellers article div img{
+        height: 280px;
+        width: 190px;
+    }
+    #BestSellers h2{
+        text-align: center;
+        margin: 10px 0px 40px 0px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+}
+/* =====================media query ends=============================== */
+
+/* ==================footer================= */
+
+.footer {
+    background-color: #0904424f ;
+    color: #ecf0f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: rgb(250, 250, 250);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+    color: #f39c12;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #7f8c8d;
+    font-size: 0.9rem;
+    /* background-color: #090442; */
+}
+
+.footer-bottom p {
+    color: #95a5a6;
+    background-color: #090442;
+    
+}

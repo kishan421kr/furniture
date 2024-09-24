@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(250, 250, 250);
+    background-color: #090442;
+    padding: 10px 100px 10px 100px;
+    font-family: "Bai Jamjuree", sans-serif;
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+}
+
+.topnav div{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.topnav div i{
+    margin-right: 5px;
+}
+
+/* =====================top navbar media query start=============================== */
+
+@media (max-width:1025px){
+    .topnav{
+        padding: 10px 50px 10px 50px;
+    }
+    .topnav div{
+        font-size: 12px;
+    }
+}
+@media (max-width:769px){
+    .topnav{
+        padding: 5px 20px 5px 20px ;
+    }
+
+}
+@media (max-width:660px){
+    .topnav{
+        padding: 5px 20px 5px 20px;
+    }
+    .topnav div{
+        font-size: 10px;
+    }
+}
+@media (max-width:431px){
+    .topnav{
+        display: none;
+    }
+}
+
+/* =====================top nav bar media query ends=============================== */
+
+/* ===============main nav bar================ */
+
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    font-family: "Bai Jamjuree", sans-serif;
+    position: sticky;
+    z-index: 5; 
+    background-color: white;
+    top: 37.6px;
+}
+.main1{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.main2{
+    display: flex;
+}
+.main2 div {
+    margin-left: 20px;
+}
+.main2 a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main2 a:hover{
+    color: #090442;
+    text-decoration: underline 1px;
+    transition: 0.5s;
+}
+
+.main3{
+    display: flex;
+}
+.main3 div{
+    margin-left: 25px;
+}
+.main3 a{
+    color: rgb(250, 250, 250);
+    background-color: #090442;
+    border-radius: 50%;
+    padding: 10px;
+}
+.main3 a:hover{
+    color: #090442;
+    background-color: rgb(250, 250, 250);
+    transition: 0.5s;
+}
+
+/* ========================moble view and slide navbar css start====================*/
+
+.mobileviewnav{
+    display: none;
+}
+#sidebar{
+    width: 250px;
+    height: 50vh;
+    background-color: rgb(250, 250, 250);
+    /* color: rgb(10, 10, 10); */
+    position: absolute;
+    top: 0px;
+    left: -400px;
+    z-index: 6;
+    padding: 20px;
+}
+
+.sidebar1{
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 20px 0px;
+    border-bottom:0.5px solid rgb(9, 4, 66) ;
+}
+.sidebar1 div{
+    margin-left: 20px ;
+
+}
+.sidebar1 div a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    background-color: #090442;
+    border-radius: 50%;
+    padding: 7px;
+    height: 10px;
+    width: 10px;
+    font-size: 16px;
+}
+.sidebar2{
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+}
+.sidebar2 div{
+    margin: 20px 0px 0px 0px;
+
+}
+.sidebar2 div a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ========================moble view and slide navbar css ends====================*/
+
+/* =====================media query start=============================== */
+
+@media (max-width:1025px){
+    .mainnav{
+        padding: 20px 50px 20px 50px;
+    }
+    .main3 a{
+        padding: 9px;
+    }
+    .main3 div{
+        margin-left: 20px;
+    }
+}
+@media (max-width:925px){
+    .mainnav{
+        padding: 18px 30px 18px 30px;
+    }
+    .main2 a{
+        font-size: 13px;
+    }
+    .main3 a{
+        padding: 8px;
+        font-size: 14px;
+    }
+    .main3 div{
+        margin-left: 15px;
+    }
+
+}
+
+@media (max-width:831px){
+    
+    .main2 a{
+        font-size: 12px;
+    }
+    .main3 div{
+        margin-left: 10px;
+    }
+    .main3 a{
+        padding: 7px;
+    }
+}
+
+@media (max-width:769px){
+    .mainnav{
+        padding: 10px 20px 10px 20px ;
+    }
+    .main2 a{
+        font-size: 12px;
+    }
+    .main3 a{
+        padding: 5px;
+    }
+    .main3 div{
+        margin-left: 5px;
+    }
+}
+@media (max-width:750px){
+    .mainnav{
+        display: none;
+    }
+    .mobileviewnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px 30px;
+        font-size: 16px;
+    }
+    .logo{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: "Bai Jamjuree", sans-serif;
+    }
+    
+    .mobnav2 a{
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        background-color: #090442;
+        border-radius: 50%;
+        padding: 7px;
+        height: 10px;
+        width: 10px;
+        font-size: 16px;
+    }
+    .mobnav2 a:hover{
+        color: #090442;
+        background-color: rgb(250, 250, 250);
+        transition: 0.5s;
+    }
+    #inputmainnav:checked ~ #sidebar{
+        left: 0px;
+        transition: left 1s;
+    }
+    #inputmainnavout:checked ~ #sidebar{
+        left: -400px;
+        transition: 1s;
+    }
+}
+
+@media (max-width:431px){
+    .mainnav{
+        display: none;
+    }
+    .mobileviewnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px 30px;
+    }
+    .logo{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: "Bai Jamjuree", sans-serif;
+    }
+    
+    .mobnav2 a{
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        background-color: #090442;
+        border-radius: 50%;
+        padding: 5px;
+        height: 10px;
+        width: 10px;
+        font-size: 12px;
+    }
+    .mobnav2 a:hover{
+        color: #090442;
+        background-color: rgb(250, 250, 250);
+        transition: 0.5s;
+    }
+    #inputmainnav:checked ~ #sidebar{
+        left: 0px;
+        transition: left 1s;
+    }
+    #inputmainnavout:checked ~ #sidebar{
+        left: -400px;
+        transition: 1s;
+    }
+}
+
+/* =====================media query ends=============================== */
+
+/* ==============hero section==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
+
+.hero{
+    background-image: url('./images/01_TLP_Hero.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: static;
+    z-index: 0;
+}
+.hero div{
+    height: 250px;
+    width: 474px;
+}
+.hero div span{
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+.hero div p{
+    margin:25px 0px 30px 0px;
+    /* font-family: "Gudea", sans-serif; */
+}
+.hero div a{
+    background-color: black;
+    color: rgb(250, 250, 250);
+    padding: 13px 35px 13px 35px;
+    /* height: 50px;
+    width: 150px; */
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gudea", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
+
+.hero div a:hover{
+    background-color: rgb(24, 24, 24);
+}
+/* ============================ second section ============================ */
+
+.section2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-column-gap: 185px;
+    margin: 156px;
+    height: 80vh;
+}
+
+
+.section2art1{
+    height: 600px;
+    width: 380px;
+    margin: 40px 0px 40px 0px;
+
+}
+.section2art1 h3{
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    margin-bottom: 25px;
+}
+.section2art1 h4{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    margin: 10px 0px 20px 0px;
+}
+.section2art1 p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* ==============================form section================================== */
+
+.form{
+    height: 90vh;
+    background-color: rgb(245, 245, 241);
+    color: rgb(51, 51, 51);
+    padding: 120px;
+}
+.formpart{
+    display: grid;
+    justify-content: center;
+}
+.formhead{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.formhead h3{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.formhead p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.formgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: rgb(115, 115, 115);
+}
+label{
+    font-size: 16px;
+}
+input{
+    margin: 10px 10px 10px 0px;
+    width: 400px;
+    height: 40px;
+}
+button{
+    background-color: black;
+    color: rgb(250, 250, 250);
+    padding: 13px 35px 13px 35px;
+    cursor: pointer;
+    width: 129px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Gudea", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    border: none;
+}
+
+/* ==================footer================= */
+
+.footer {
+    background-color: #0904424f ;
+    color: #ecf0f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: rgb(250, 250, 250);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+    color: #f39c12;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #7f8c8d;
+    font-size: 0.9rem;
+    /* background-color: #090442; */
+}
+
+.footer-bottom p {
+    color: #95a5a6;
+    background-color: #090442;
+    
+}
